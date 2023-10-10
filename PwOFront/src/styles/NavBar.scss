@@ -1,0 +1,129 @@
+@use "_global" as gs;
+@import "font";
+
+
+.text-right {
+  text-align: right;
+  width: 100%;
+  list-style: none;
+  text-decoration: none;
+}
+
+.text-right-ul{
+  list-style: none;
+}
+
+.SignIn {
+  color: gs.$DarkBlue;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Barlow-Black";
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  border-radius: 5px;
+  background-color: #f9b7b7;
+  
+}
+
+.h6-nav {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.ul-nv {
+  background: -moz-linear-gradient(gs.$YellowColor, #fff);
+width: 100%;
+  padding-left: 40px;
+  margin: 0%;
+  list-style: none;
+}
+
+.ul-nv-li {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+}
+
+.ul-nv-a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 30px;
+  padding: 10px 10px;
+  display: block;
+  width: 160px;
+  text-align: center;
+  font-family: "Barlow-Medium";
+}
+
+.logout-button {
+  background: linear-gradient(#fff, #56addf);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ul-nv-a:hover {
+  background-color: gs.$blueColor;
+  color: #ffffff;
+}
+
+.ul-children {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 9999;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+  padding-left: 0;
+  border: 1px solid #ccc;
+}
+
+.ul-children-li {
+  list-style: none;
+}
+
+.ul-children-a {
+  display: block;
+  padding: 3px 20px;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  font-family: "Barlow-Ligth";
+  text-decoration: none;
+  background-color: gs.$WhiteColor;
+}
+
+.ul-children-a:hover {
+  background-color: #f8f8f8;
+  color: #09c2df;
+}
+
+.ul-nv-li:hover .ul-children {
+  display: block;
+}
+
+.signUp-button {
+  background-color: var(--white);
+  outline: 1px solid;
+  outline-color: var(--hospital-blue);
+  color: var(--hospital-blue);
+}
+.signIn-button {
+  background-color: var(--hospital-blue);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  height: 50px;
+  width: 25%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+}
+
+.signIn-button a{
+  text-decoration: none;
+}
